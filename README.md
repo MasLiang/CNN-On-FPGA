@@ -6,3 +6,5 @@ The ordinary project developed using VIVADO is on another computer and I can't u
 I will then perfect it as soon as possible.
 
 If you have any questions, please contact me.
+
+E:LiangJiawei@buaa.edu.cn
