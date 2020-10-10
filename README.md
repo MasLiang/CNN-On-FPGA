@@ -7,4 +7,4 @@ I will then perfect it as soon as possible.
 
 If you have any questions, please contact me.
 
-E:LiangJiawei@buaa.edu.cn
+my csdn is https://blog.csdn.net/qq_38798425
