@@ -1,0 +1,16 @@
+clock_control 			->			clocking wizard
+mult				->			Multiplier(16bit unsigned value* 16bit signed value)
+// all these ip cores are set as Single Port ROM and all .coe files can be found.
+input_data			->			Block Memory Generator
+weight1				->			Block Memory Generator
+weight_2				->			Block Memory Generator
+weight3				->			Block Memory Generator
+weight1_fullconn_1			->			Block Memory Generator
+weight2_fullconn_1			->			Block Memory Generator
+weight3_fullconn_1			->			Block Memory Generator
+weight4_fullconn_1			->			Block Memory Generator
+bias_fullconn_1			->			Block Memory Generator
+// all these ip cores are set as Simple Dual Port RAM
+l1pb1				->			Block Memory Generator
+l2pb2				->			Block Memory Generator
+l3cb1				->			Block Memory Generator
