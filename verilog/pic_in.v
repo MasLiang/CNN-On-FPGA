@@ -95,16 +95,16 @@ begin
 			//************************************************************************
 			///**************************picture output*******************************
 			//************************************************************************
-			if(cnt_height_offset == filter_size-1)						//¾í»ıÁĞµÄ×îºóÒ»¸öÊı
+			if(cnt_height_offset == filter_size-1)						//å·ç§¯åˆ—çš„æœ€åä¸€ä¸ªæ•°
 			begin
 				cnt_height_offset					<=							0												;
-				if(cnt_length_offset == filter_size-1)					//¾í»ıĞĞµÄ×îºóÒ»¸öÊı,ÒªÖ´ĞĞÏÂÒ»×é¾í»ı£¬¾í»ı°´ÁĞÔö
+				if(cnt_length_offset == filter_size-1)					//å·ç§¯è¡Œçš„æœ€åä¸€ä¸ªæ•°,è¦æ‰§è¡Œä¸‹ä¸€ç»„å·ç§¯ï¼Œå·ç§¯æŒ‰åˆ—å¢
 				begin
 					cnt_length_offset				<=							0												;
-					if(length - filter_size - cnt_length_start < stride_length)	//ĞĞÉÏÃæµÄ×îºóÒ»¸ö¾í»ı
+					if(length - filter_size - cnt_length_start < stride_length)	//è¡Œä¸Šé¢çš„æœ€åä¸€ä¸ªå·ç§¯
 					begin
 						cnt_length_start		<=							0												;
-						if(height - filter_size - cnt_height_start < stride_height)//ÁĞÉÏÃæ×îºóÒ»¸ö¾í»ı
+						if(height - filter_size - cnt_height_start < stride_height)//åˆ—ä¸Šé¢æœ€åä¸€ä¸ªå·ç§¯
 						begin
 							state						<=							state_reset									;	
 						end
@@ -163,7 +163,7 @@ generate
 
 				always@(posedge clk_in)
 				begin
-					map[(j*channel_length_num+k<<bits_shift)+bits-1:(j*channel_length_num+k<<bits_shift)]			<=					douta[j*channel_length_num+k]	;		
+					map[((j*channel_length_num+k)<<bits_shift)+bits-1:(j*channel_length_num+k<<bits_shift)]			<=					douta[j*channel_length_num+k]	;		
 				end
 				assign addra[j*channel_length_num+k]	=	((cnt_height_start+cnt_height_offset+j)<<6) +((cnt_height_start+cnt_height_offset+j)<<5)+((cnt_height_start+cnt_height_offset+j)<<2)+ cnt_length_start+cnt_length_offset + k	;
 			end
