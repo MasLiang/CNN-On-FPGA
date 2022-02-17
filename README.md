@@ -6,3 +6,5 @@ There are instructions about the code: https://blog.csdn.net/qq_38798425
 If there are any question, please contact me.
 
 There is a Vivado project for it which is too big. So I submitted it to Baidu Cloud.
+Link：https://pan.baidu.com/s/1OEUPTEQ3miRcPFCaWy-3MA 
+Passcode：bqit
